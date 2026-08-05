@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="assets/riskguard-hero-banner.png" alt="RiskGuard AI — intelligent credit risk and fraud analytics platform" width="100%">
+</p>
+
+<p align="center">
+  <sub><strong>Concept visualization:</strong> dashboard values shown in project artwork are illustrative and are not published benchmark results.</sub>
+</p>
+
 <div align="center">
 
 🛡️ RiskGuard AI
@@ -130,7 +138,39 @@ Reproducible runtime packaging
 
 Docker
 
+🖥️ Product Experience Concept
+
+<p align="center">
+  <img src="assets/riskguard-dashboard-concept.png" alt="RiskGuard AI analyst dashboard concept mockup" width="100%">
+</p>
+
+<p align="center">
+  <sub><strong>Concept mockup:</strong> this visualization represents the planned analyst experience. Displayed names, cases, dates, balances, and performance values are synthetic and illustrative.</sub>
+</p>
+
+The intended analyst workspace brings together:
+
+Application-level risk scoring and reason codes
+
+Fraud alerts and prioritized investigation queues
+
+Portfolio risk distribution and operational KPIs
+
+Model performance, feature impact, and model-health monitoring
+
+Human-in-the-loop review states and escalation actions
+
+Grounded policy retrieval for explainable decision support
+
 🏗️ System Architecture
+
+<p align="center">
+  <img src="assets/riskguard-system-architecture.png" alt="RiskGuard AI target system architecture" width="100%">
+</p>
+
+<p align="center">
+  <sub>Target architecture concept showing streaming ingestion, feature processing, modeling, experiment tracking, orchestration, policy retrieval, and analyst review.</sub>
+</p>
 
 flowchart LR
     A[Loan Application Generator] -->|JSON events| B[(Kafka Topic)]
@@ -224,6 +264,8 @@ flowchart LR
     H --> I[Analyst Review]
 
 📊 Model Evaluation & Results
+
+Important: numeric values shown in the concept artwork are sample UI content. Only reproducible experiment outputs should be reported as model results.
 
 The repository is designed to log experiments through MLflow. Publish only metrics generated from your own reproducible runs.
 
@@ -391,6 +433,11 @@ The following example shows the intended output structure. It is illustrative, n
 📂 Repository Structure
 
 RiskGuard-AI/
+├── assets/
+│   ├── riskguard-hero-banner.png
+│   ├── riskguard-system-architecture.png
+│   ├── riskguard-dashboard-concept.png
+│   └── riskguard-portfolio-homepage.png
 ├── dags/
 │   └── fraud_pipeline_dag.py       # Airflow retraining workflow
 ├── src/
@@ -684,6 +731,14 @@ Pipeline success rate, processing latency
 Model health
 
 Drift, stability, calibration, performance decay
+
+🧩 Portfolio Homepage Asset
+
+The package also includes:
+
+assets/riskguard-portfolio-homepage.png
+
+This image is designed for a personal portfolio homepage or featured-project card. It is intentionally not embedded in this README to avoid duplicating the main hero artwork.
 
 🤝 Contributing
 
